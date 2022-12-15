@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Task4</title>
+    </head>
+          
+        
+       <body>
+        <p>A : x<span id="Ax"> 1 </span>, y<span id="Ay"> 11 </span></p>
+        <p><input type="text" onblur="myFunc()" /></p>
+       <script> function myFunc() {
+           //[aX,aY] = [aY,aX];
+           //document.write("Значения переменных"+" aX = " + aX + " " + "aY = " + aY);
+        var t = document.getElementById("Ax").innerHTML;
+        document.getElementById("Ax").innerHTML = document.getElementById("Ay").innerHTML;
+        
+        document.getElementById("Ay").innerHTML = t;
+           
+        }
+        </script>
+    </body>
+</html>

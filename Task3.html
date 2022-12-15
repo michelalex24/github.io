@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Task3</title>
+    </head>
+    <script>
+            function getData() {
+        var aX = +document.getElementById("Ax").value,
+                aY = +document.getElementById("Ay").value;
+        document.getElementById("result").innerHTML = getSquare(aX, aY);
+    }
+ 
+    function getSquare(aX, aY) {
+        return Math.sqrt(Math.pow(aX,2)+Math.pow(aY,2));
+    }
+    </script>
+    <body>
+        <p>A : x<input type="text" size="4" id="Ax" />, y<input type="text" size="4" id="Ay" /></p>
+        <p>Полощадь равна: <span id="result">0</span></p>
+        <p><input type="text" value="text" onselect="getData()" /></p>
+    </body>
+</html>
