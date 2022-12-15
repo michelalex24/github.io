@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab8-10</title>
+  <style>
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type='date'] {
+      width: 120px;
+      height: 20px;
+    }
+
+    input {
+      outline: none;
+    }
+
+    table {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      padding: 5px;
+      border: 2px solid black;
+      text-align: center;
+    }
+
+    .form_required::after {
+      content: "Проверьте введенные данные";
+      color: rgb(0, 255, 76);
+      font-style: italic;
+    }
+    .weekend {
+      display: none;
+    }
+    .listmonth {
+      outline: none;
+    }
+
+    .add{
+      color: rgb(0, 255, 38);
+    }
+    .p {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#">
+    <p>
+      <label for="lastname">Фамилия сотрудника</label>
+      <input type="text" name="lastname" id="lastname" required>
+    </p>
+    <p>
+      <label for="date">Дата заключения контракта</label>
+      <input type="date" name="date" id="date" required>
+    </p>
+    <input type="button" value="Добавить" class="add-button">
+  </form>
+  <input type="button" value="Очистить" class="remove-button">
+  <table class="profile">
+    <thead>
+      <tr>
+        <th>Фамилия</th>
+        <th>Дата заключение контракта</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lastname">&nbsp</td>
+        <td>&nbsp</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <label for="count">Расчитать дату начала и окончания отпуска</label>
+    <input type="button" value="посчитать" id="count">
+  </p>
+  <table class="weekend">
+    <thead>
+      <tr>
+        <th>Фамилия</th>
+        <th>Дата начала отпуска</th>
+        <th>Дата окончания отпуска</th>
+      </tr>
+    </thead>
+    <tbody class="holiday">
+    </tbody>
+  </table>
+  <p class="quarter p">
+    <label for="show-1">Фамилии сотрудников, отпуск которых будет завершен в заданном квартале</label>
+    <select name="listQuarter" class="listquarter">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <input type="button" value="показать" id="show-1">
+  </p>
+  <p class="year p">
+    <label for="show-2">фамилии сотрудников, отпуск которым будет предоставлен в следующем
+      календарном году
+    </label>
+    <input type="button" value="показать" id="show-2">
+  </p>
+  <p class="month p">
+    <label for="show">Фамилии сотрудников, отпуск которым будет предоставлен в заданном
+      месяце</label>
+    <select name="listMonth" class="listmonth">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <input type="button" value="показать" class="show" id="show">
+  </p>
+  <script src="./main.js"></script>
+</body>
+
+</html>

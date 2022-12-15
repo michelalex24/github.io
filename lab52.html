@@ -1,0 +1,26 @@
+<HTML>
+    <HEAD>
+    <TITLE>Простое вертикальное меню</TITLE>
+    <script language="JavaScript">
+    function img(n, action)
+    {if (action)
+    {document.images[n-1].src="wpch"+n+".gif"}
+    else
+    {document.images[n-1].src="pch"+n+".gif"}
+    }
+    </script>
+    </HEAD>
+    <BODY background="fon1.jpg">
+    <H2><FONT соlоr="#0000ff">Содержание</FONT></H2>
+    <A href="tch1.htm" onmouseover="img(1,1)" onmouseout="img(1,0)">
+    <IMG src="pch1.gif" аlt="форматирование текста" border="0" width="103" 
+   height="35"></A><br>
+    <A href="tch2.htm" onmouseover="img(2,1)" onmouseout="img(2,0)">
+   6
+    <IMG src="pch2.gif" аlt="форматирование текста" border="0" width="103" 
+   height="35"></A><br>
+    <A href="tch3.htm" onmouseover="img(3,1)" onmouseout="img(3,0)">
+    <IMG src="pch3.gif" аlt="форматирование текста" border="0" width="103" 
+   height="35"></A><br>
+    </BODY>
+    </HTML>

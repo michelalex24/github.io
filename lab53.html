@@ -1,0 +1,55 @@
+<HTML>
+    <HEAD>
+        <TITLE>Перестановка изображений</TITLE>
+        
+     <script language = "JavaScript">
+          
+            function chan()
+            {
+                
+                var arr =[];
+     
+                var result = document.getElementById('result');
+                //каждому изображению присвоил переменную,А потом передал в массив
+                for (var i = 0; i < document.getElementsByTagName('img').length - 1; i++) {
+                    var img = document.getElementsByTagName('img')[i];
+     
+                    arr.push(img);
+                    
+     
+                }
+                result.src = Math.floor(Math.random()*(arr.length)+1)  + ".jpg" ;
+                /*r = ar + ".jpg"
+                result.src = ar + ".jpg";
+                alert(r)*/
+                
+     
+     
+            }
+         
+    </script>
+    <script src="C:\Users\malek\node_modules\jquery\dist\jquery.js"></script>
+     
+     
+    </HEAD>
+    <BODY>
+    <CENTER>
+        <H4>Галерея рисунков</H4><br>
+        <IMG src="1.jpg" width="90" name="pic1" title="1">
+        <IMG src="2.jpg" width="90" name="pic2" title="2">
+        <IMG src="3.jpg" width="90" name="pic3" title="3"> <br>
+     
+        <input type="button" value="Выбрать изображние" onClick="chan(this)">
+        <br>
+        <IMG id="result" alt = "Here will be loaded the image"> <!--width="90" name="pic1" onload="chan(item)">-->
+    </CENTER>
+    <script>
+        $('img').width(90).hover(function(){
+            $(this).stop().animate({width: 150});
+        },
+        function(){
+            $(this).stop().animate({width: 90});
+        });
+    </script>
+    </BODY>
+    </HTML>

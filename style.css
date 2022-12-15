@@ -1,0 +1,161 @@
+body {
+  height: calc(100vh - 100px);
+  margin: 0;
+  padding: 50px;
+  background-image: url('./images/1645105152_21-phonoteka-org-p-prikolnii-fon-dlya-fotoshopa-na-zadnii-pla-23.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+.text {
+  margin: 0;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 40px;
+  max-width: 1480px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: white;
+  opacity: .95;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header__heading {
+  margin-bottom: 20px;
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.img-wrap {
+  width: 120px;
+  height: 120px;
+}
+
+.contacts__img-wrap {
+  margin: 15px 50px;
+  padding: 2px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__form {
+  width: 380px;
+}
+
+.form-contacts__input {
+  width: 300px;
+  height: 25px;
+  border: 2px solid black;
+}
+
+
+.input:focus {
+  outline: none;
+}
+
+.items-curses {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.courses {
+  margin: 20px auto;
+}
+
+.courses__input {
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.courses__table {
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.courses-border {
+  border: 2px solid black;
+  padding: 10px 15px;
+}
+
+.td__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.input {
+  margin-right: 5px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.courses__price {
+  border: 0;
+}
+
+.courses__price:focus {
+  outline: none;
+}
+
+.last-paragraph {
+  justify-content: space-around;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.courses__button {
+  display: block;
+  width: 360px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 0);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.table-td {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

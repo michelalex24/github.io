@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>лаб6_1</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    #size {
+      margin-bottom: 20px;
+    }
+
+    input[type='text'] {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      width: 120px;
+      height: 30px;
+      margin-bottom: 15px;
+    }
+    .description {
+      width: 420px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Задание 2</h1>
+  <p class="description">Создайте массив. Заполните его случайными значениями от А до В.
+    Значения А, В и размер массива вводятся на форме.
+    Напишите функцию filt, которая принимает функцию-предикат и массив.
+    Возвращает она массив значений, для которых предикат вернет true</p>
+  <form action="#">
+    <label for="A">Введите начало интервала</label>
+    <input type="text" name="A" id="A">
+    <label for="B">Введите конец интервала</label>
+    <input type="text" name="B" id="B">
+    <label for="B">Введите размер массива</label>
+    <input type="text" name="size" id="size">
+    <input type="button" value="Получить" class="button">
+    <label for="array">Исходный массив</label>
+    <input type="text" name="arr" id="arr">
+    <label for="array">Полученный массив</label>
+    <input type="text" name="array" id="array">
+  </form>
+  <script language = "Javascript">
+    function sequence(start = 0, step = 1) {
+  let callNumber = start;
+  return function() {
+    var returnValue = callNumber; // значение для вывода
+    callNumber += step; // готовимся к следующему шагу
+    return returnValue;
+  }
+}
+
+var generator = sequence(10, 3);
+
+console.log(generator()); // 10
+console.log(generator()); // 13
+
+var generator2 = sequence();
+
+console.log(generator2()); // 0
+console.log(generator2()); // 1
+  </script>
+</body>
+
+</html>

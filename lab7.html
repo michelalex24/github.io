@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header container">
+      <h1 class="header__heading text">Анкета слушателей курса</h1>
+      <h2 class="header__subheading text">Личная информация</h2>
+      <div class="header__contacts contacts">
+        <div class="contacts__img-wrap img-wrap">
+          <img src="./images/unnamed.jpg" alt="avatar" class="img-wrap__img img">
+        </div>
+        <form action="#" class="contacts__form form-contacts">
+          <p class="form-contacts__fio form-item">
+            <label for="fio">ФИО:</label>
+            <input type="text" name="fio" id="fio" class="form-contacts__input input" required>
+          </p>
+          <p class="form-contacts__tel form-item">
+            <label for="tel">тел:</label>
+            <input type="tel" name="tel" id="tel" class="form-contacts__input input" required>
+          </p>
+          <p class="form-contacts__mail form-item">
+            <label for="mail">e-mail:</label>
+            <input type="text" name="mail" id="mail" class="form-contacts__input input" required>
+          </p>
+        </form>
+      </div>
+    </header>
+    <section class="courses container">
+      <table class="courses__table table">
+        <tr>
+          <th class="courses-border">Название курса</th>
+          <th class="courses-border">Продолжительность курса</th>
+          <th class="courses-border">Язык</th>
+          <th class="courses-border">Отчетность</th>
+          <th class="courses-border">Стоимость</th>
+        </tr>
+        <tr>
+          <td class="table-td courses-border">
+            <input type="checkbox" name="courses__input" value="js" id="js" class="courses__input input courses__item">
+            <label for="js">JavaScript</label>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="hours" value="1h" id="1h" class="courses__time input disabled">
+              <label for="1h">1 час</label>
+              <input type="radio" name="hours" value="2h" id="2h" class="courses__time input disabled">
+              <label for="2h">2 часа</label>
+              <input type="radio" name="hours" value="3h" id="3h" class="courses__time input disabled">
+              <label for="3h">3 часа</label>
+            </p>
+          </td>
+          <td class="table-td courses-border target">
+            <select name="lang" class="courses__lang disabled">
+              <option value="en">английский</option>
+              <option value="rus">русский</option>
+              <option value="deut">немецкий</option>
+            </select>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="reporting" value="offset" id="offset"
+                class=" courses__reporting input disabled">
+              <label for="offset">зачет</label>
+              <input type="radio" name="reporting" value="exam" id="exam" class=" courses__reporting input disabled">
+              <label for="exam">экзамен</label>
+            </p>
+          </td>
+          <td class="table-td courses-border">
+            <input type="text" name="price" class="courses__price courses__price-1" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-td courses-border">
+            <input type="checkbox" name="courses__input" value="html_css" id="html_css"
+              class="courses__input input courses__item">
+            <label for="html_css">HTML/CSS</label>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="hours-2" value="1h" id="1h-2" class="courses__time input disabled">
+              <label for="1h-2">1 час</label>
+              <input type="radio" name="hours-2" value="2h" id="2h-2" class="courses__time input disabled">
+              <label for="2h-2">2 часа</label>
+              <input type="radio" name="hours-2" value="3h" id="3h-2" class="courses__time input disabled">
+              <label for="3h-2">3 часа</label>
+            </p>
+          </td>
+          <td class="table-td courses-border target">
+            <select name="lang" class="courses__lang disabled">
+              <option value="en">английский</option>
+              <option value="rus">русский</option>
+              <option value="deut">немецкий</option>
+            </select>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="reporting-2" value="offset" id="offset-2"
+                class=" courses__reporting input disabled">
+              <label for="offset-2">зачет</label>
+              <input type="radio" name="reporting-2" value="exam" id="exam-2"
+                class=" courses__reporting input disabled">
+              <label for="exam-2">экзамен</label>
+            </p>
+          </td>
+          <td class="table-td courses-border">
+            <input type="text" name="price" class="courses__price courses__price-2" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-td courses-border">
+            <input type="checkbox" name="courses__input" value="php" id="php"
+              class="courses__input input courses__item">
+            <label for="php">PHP</label>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="hours-3" value="1h" id="1h-3" class="courses__time input disabled">
+              <label for="1h-3">1 час</label>
+              <input type="radio" name="hours-3" value="2h" id="2h-3" class="courses__time input disabled">
+              <label for="2h-3">2 часа</label>
+              <input type="radio" name="hours-3" value="3h" id="3h-3" class="courses__time input disabled">
+              <label for="3h-3">3 часа</label>
+            </p>
+          </td>
+          <td class="table-td courses-border target">
+            <select name="lang" class="courses__lang disabled">
+              <option value="en">английский</option>
+              <option value="rus">русский</option>
+              <option value="deut">немецкий</option>
+            </select>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="reporting-3" value="offset" id="offset-3"
+                class=" courses__reporting input disabled">
+              <label for="offset-3">зачет</label>
+              <input type="radio" name="reporting-3" value="exam" id="exam-3"
+                class=" courses__reporting input disabled">
+              <label for="exam-3">экзамен</label>
+            </p>
+          </td>
+          <td class="table-td courses-border">
+            <input type="text" name="price" class="courses__price courses__price-3" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-td courses-border">
+            <input type="checkbox" name="courses__input" value="python" id="python"
+              class="courses__input input courses__item">
+            <label for="python">Python</label>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="hours-4" value="1h" id="1h-4" class="courses__time input disabled">
+              <label for="1h-4">1 час</label>
+              <input type="radio" name="hours-4" value="2h" id="2h-4" class="courses__time input disabled">
+              <label for="2h-4">2 часа</label>
+              <input type="radio" name="hours-5" value="3h" id="3h-4" class="courses__time input disabled">
+              <label for="3h-4">3 часа</label>
+            </p>
+          </td>
+          <td class="table-td courses-border target">
+            <select name="lang" class="courses__lang disabled">
+              <option value="en">английский</option>
+              <option value="rus">русский</option>
+              <option value="deut">немецкий</option>
+            </select>
+          </td>
+          <td class="table-td courses-border target">
+            <p class="td__content">
+              <input type="radio" name="reporting-4" value="offset" id="offset-4"
+                class=" courses__reporting input disabled">
+              <label for="offset-4">зачет</label>
+              <input type="radio" name="reporting-4" value="exam" id="exam-4"
+                class=" courses__reporting input disabled">
+              <label for="exam-4">экзамен</label>
+            </p>
+          </td>
+          <td class="table-td courses-border">
+            <input type="text" name="price" class="courses__price courses__price-4" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5" class="table-td courses-border">
+            <p class="td__content last-paragraph">
+              <label for="price">Общая стоимость:</label>
+              <input type="text" name="price" class="courses__price" id="allprice" readonly>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <div class="buttons">
+        <input type="button" value="Рассчитать" class="courses__button">
+        <input type="button" value="Отменить" class="courses__button">
+      </div>
+    </section>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
